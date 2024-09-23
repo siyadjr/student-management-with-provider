@@ -131,7 +131,7 @@ class _SignupScreenState extends State<SignupScreen> {
     sharepref.setBool('userlogged', true);
     sharepref.setBool('signed', true);
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (ctx) => const ScreenHome()));
+        context, MaterialPageRoute(builder: (ctx) =>  ScreenHome()));
   }
 
   @override

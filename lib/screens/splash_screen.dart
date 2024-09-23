@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
         signed == true &&
         signed != null) {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (ctx) => const ScreenHome()));
+          context, MaterialPageRoute(builder: (ctx) =>  ScreenHome()));
     } else if (userBox.isEmpty) {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (ctx) => const SignupScreen()));

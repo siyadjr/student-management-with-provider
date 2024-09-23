@@ -27,7 +27,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
             end: Alignment.bottomRight,
             colors: [
               ConstantColors.getColor(ColorOptions.mainColor),
-              Color.fromARGB(255, 0, 0, 0)
+              const Color.fromARGB(255, 0, 0, 0)
             ],
           ),
         ),
@@ -135,7 +135,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
       sharedpref.setBool('signed', true);
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (ctx) => const ScreenHome()),
+        MaterialPageRoute(builder: (ctx) =>  const ScreenHome()),
       );
     } else {
       // Show error message for wrong credentials
